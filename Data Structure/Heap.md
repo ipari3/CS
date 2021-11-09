@@ -4,6 +4,7 @@ heap 메모리나 Heap's 알고리즘과는 관련이 없다.
 - heap memory: stack과 비교하면 아무렇게나 쌓아올린다는 의미에서 지어졌으며,  
 스택과 달리 띄엄띄엄 사용할 수 있으며 동적할당이 가능하다.
 - Heap's algorithm: 순열(permutation)을 구현하는 알고리즘이다.
+
 힙 구조는 보통 이진 트리로 구현하며, 완전 이진 트리일 때 높이가 최소가 된다.
 #### Complete Binary Tree (완전 이진 트리) 
 마지막 레벨을 제외한 모든 레벨이 완전히 채워져있다. (completely filled)  
