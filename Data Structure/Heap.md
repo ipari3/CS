@@ -59,8 +59,7 @@ perfect가 아닌 complete 이진 트리는 almost complete 혹은 nearly comple
 맨 윗 레벨의 루트 노드는 1개이며 트리의 높이만큼 비교하므로 연산량은 h·1이다.  
 총 연산량은 0·n/2 + 1·n/4 + ... + h·1이며, 시간복잡도는 O(N)이다.  
 ([외부에서 더 보기: *테일러 급수*를 이용한 증명][1])  
-siftUp 방식으로 heapify하면 시간복잡도가 O(N logN)이 되므로,  
-siftUp 방식은 원소 삽입 및 삭제에만 사용한다.
+siftUp 방식으로 heapify하면 시간복잡도가 O(N logN)이 되므로, siftUp 방식은 원소 삽입 및 삭제에만 사용한다.
 #### 힙 정렬
 힙 구조를 이용한 정렬인 힙 정렬의 시간복잡도는 O(N logN)이다.  
 우선 힙 구조로 만드는 것은 O(N) 혹은 O(N log N)이다.  
