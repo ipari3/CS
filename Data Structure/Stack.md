@@ -21,4 +21,4 @@ stack 메모리와 마찬가지로 차곡차곡 쌓는다는 의미가 있으며
 
 
 [1]: https://github.com/ipari3/CS/blob/main/Data%20Structure/Array.md
-[2]: 
+[2]: https://github.com/ipari3/CS/blob/main/Data%20Structure/Linked%20List.md
