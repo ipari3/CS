@@ -65,8 +65,8 @@ rightmost는 마지막 val의 다음 위치를 반환한다.
 val을 삽입하는 것이 아닌, val을 기준으로 하여 이보다 크지 않은 최댓값을 얻어야 한다고 하자.
 - arr에 val이 있을 때, 반환값 s는 leftmost는 이보다 작은 값, rightmost는 이보다 큰 값의 위치이다.  
 따라서 각각 s+1, s-1 위치의 값이 최댓값인 val이다.
-- arr에 val이 없을 때, 반환값 s는 둘 모두 val보다 큰 값의 위치이며 s-1은 val보다 작은 값의 위치이다.
-따라서 rightmost 함수를 사용하며, s-1 위치의 값이 val보다 크지 않은 최댓값이다.
+- arr에 val이 없을 때, 반환값 s는 둘 모두 val보다 큰 값의 위치이며 s-1은 val보다 작은 값의 위치이다.  
+따라서 일관성있는 rightmost 함수를 사용하며, s-1 위치의 값이 val보다 크지 않은 최댓값이다.
 ```
 def binary_search_max_ngt_val(arr, val, s, e):
     # return the pos of max which is not greater than val
