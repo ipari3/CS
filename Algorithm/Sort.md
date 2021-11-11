@@ -163,6 +163,10 @@ r 위치의 원소가 피벗보다 작으면 l 위치의 원소와 자리를 바
 
 최악의 경우 모두 왼쪽 혹은 모두 오른쪽으로 이동한다. (시간복잡도는 O(N^2))  
 이러한 것을 편향(skew)되었다고 하며, 이를 해결하기 위한 다양한 트리들이 존재한다.
+https://namu.wiki/w/%ED%8A%B8%EB%A6%AC(%EA%B7%B8%EB%9E%98%ED%94%84)#s-4.1.2
+
+## 하이브리드
+https://namu.wiki/w/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98#s-2.3
 
 
 [1]: https://github.com/ipari3/CS/blob/main/Algorithm/Binary%20Search.md
