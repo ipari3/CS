@@ -71,3 +71,75 @@
 ##### 요소
 - RS-232, V.35, V.34, Q.911, T1, E1, 10BASE-T, 100BASE-TX, ISDM, SONET, DSL
 #### (하드웨어)
+
+## 계층별 프로토콜
+### 계층 7. 응용 계층
+#### 모드버스 (Modbus)
+- 시리얼 통신 프로토콜
+- 제조공장이나 놀이공원 등의 기계 자동화 및 제어를 위한 PLC들과의 통신
+- 산업용, 공개 및 무료 프로토콜, 성치와 유지보수가 용이, 비트아 워드(16비트) 단위의 정보조작이 용이
+#### SIP (Session Initiation Protocol. 세션 개시 프로토콜)
+- 시그널링 프로토콜
+- 음성과 화상 통화같은 멀티미디어 세션 제어
+- 전화, 인터넷 컨퍼런스, 인스턴트 메신저 등의 지능형 단말들이 서로 식별하고 세션을 생성, 삭제, 수정
+- TCP와 UDP에 모두 사용 가능, 이메일 주소와 비슷한 SIP URL 사용(IP주소에 종속되지 않음)
+- HTTP와 SMTP의 많은 부분 차용, 텍스트 기반, 유연성과 확장성.
+#### HTTP (HyperText Transfer Protocol)
+- W3 상에서 정보를 주고받기 위한 프로토콜.  
+클라이언트와 서버 사이에 이루어지는 요청/응답(request/response) 프로토콜.
+- 주로 TCP 사용, HTTP/3부터 UDP 사용.  
+80번 포트를 사용한다.
+#### SMTP (Simple Mail Transfer Protocol. 간이 우편 전송 프로토콜)
+- 인터넷에서 이메일을 보내기 위해 사용하는 프로토콜.
+- TCP 포트번호는 25번이다.
+#### SNMP (Simple Network Management Protocol. 간이 망 관리 프로토콜)
+- IP 네트워크상의 장치로부터 정보를 수집, 관리, 수정
+- 이를 지원하는 장치로는 라우터, 스위치, 서버, 워크스테이션, 프린터, 모뎀 랙 등이 있다.
+#### FTP (File Transfer Protocol. 파일 전송 프로토콜)
+- TCP/IP 프로토콜을 가지고 서버와 클라이언트 사이의 파일 전송.
+- 보안에 취약하다.
+- FTPS, SSH FTP, TFTP(Trivial FTP), SFTP(Simple FTP) 등의 프로토콜이 파생되었다.
+#### TELNET (텔넷)
+- 인터넷이나 로컬 영역 네트워크 연결에 쓰이는 프로토콜.
+- 보안 문제 때문에 사용륭이 감소했으며, 원격 제어를 위해 SSH로 대체되기도 하였다.
+#### NFS (Network File System)
+- 클라이언트 컴퓨터의 사용자가 직접 연결된 스토리지에 접근하는 방식과 비슷한 방식으로  
+네트워크 상의 파일에 접근하도록 도와주는 프로토콜.
+#### NTP (Network Time Protocol)
+- 컴퓨터 시스템 간 시간 동기화를 위한 프로토콜.
+- 패킷 교환(packet switching)과 가변 레이턴시 데이터 네트워크를 이용한다.
+## 계층 6. 표현 계층
+#### TDI (Tabbed Document Interface)
+- 하나의 창 안에 여러 탭을 생성해서, 각 탭을 통해 브라우징하는 것.
+- 웹 브라우저, 웹 애플리케이션, 문서 편집기, 워드 프로세서, 스프레드시트 등에서 사용된다.
+#### ASCII (American Standard Code for Information Interchange. 아스키)
+- 영문 알파벳을 사용하는 7비트 문자 인코딩. (총 128 문자)
+#### EBCDIC (Extended Binary Coded Decimal Interchange Code. 확장 이진화 십진법 교환 부호. 엡시딕)
+- 8비트 문자 인코딩
+#### MIDI (Musical Instrument Digital Interface. 악기 디지털 인터페이스. 미디)
+- 전자 악기끼리 디지털 신호를 주고받기 위해 각 신호를 규칙화한 규약.
+#### MPEG (Moving Picture Experts Group. 엠펙)
+- 영상 압축 방법
+- 손실 압축 방식을 사용한다.
+## 계층 5. 세션 계층
+#### NetBIOS (Network Basic Input/Output System. 넷바이오스)
+- LAN 기술을 이용한 통신 소프트웨어요 API
+- 애플리케이션들이 근거리 통신망을 통해 통신할 수 있게 한다.
+#### SAP (Service Advertising Protocol. 서비스 광고 프로토콜)
+- 넷웨어(NetWare)의 네트워크층 프로토콜인 IPX의 상위 계층에서 동작하는 통신 규약.  
+넷웨어는 네트워크 운영 체제(NOS)이다.
+- 넷웨어의 서버와 클라이언트 사이에서 주소 정보나 그 서버가 제공하는 파일 서버, 프린터 서버 등의 서리스를 알린다.
+#### TLS (Transport Layer Security. 전송 계층 보안)
+- 과거 명칭은 SSL(Secure Sockets Layer. 보안 소켓 레이어)이다.  
+SSL이 표준화되면서 TLS로 명칭이 변경되었다.  
+다만 IETF(국제 인터넷 표준화 기구)에 의해 구식(deprecate)으로 간주되어있다.
+- 네트워크에 통신 보안을 제공하기 위해 설계된 암호 규약.
+- 전송계층 종단간 보안과 데이터 무결성을 확보해준다.
+- 웹 브라우징, 전자 메일, 인스턴트 메신저, VoIP(voice-over-IP) 등에서 적용되고 있다.
+## 계층 4. 전송 계층
+#### NetBEUI (NetBIOS Extended User Interface. 넷뷰)
+- 넷바이오스 에뮬레이터  
+PC 네트워크 상에서 넷바이오스를 인식하는 애플리케이션들이 새로운 디자인에서 동작할 수 있게 한다.  
+기본 넷바이오스 API를 확장하면서 토큰 링의 노드 능력을 확대시킨다.
+#### TCP (Transmission Control Protocol. 전송 제어 프로토콜)
+- LAN
